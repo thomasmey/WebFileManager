@@ -1,0 +1,17 @@
+<web-app 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    id="WebFileManager"
+    version="2.5">
+  <display-name>WebFileManager</display-name>
+  <servlet>
+    <servlet-name>fileDownload</servlet-name>
+    <servlet-class>de.m3y3r.WebFileManager.servlet.FileDownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fileDownload</servlet-name>
+    <url-pattern>/download/*</url-pattern>
+  </servlet-mapping>
+</web-app>
